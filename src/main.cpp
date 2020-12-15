@@ -122,7 +122,9 @@ void loop() {
                 displayBin(val);
                 displayHex(val);
             } else {
-
+                Serial.println("Calculation error!");
+                reset();
+                return;
             }
         }
     });
